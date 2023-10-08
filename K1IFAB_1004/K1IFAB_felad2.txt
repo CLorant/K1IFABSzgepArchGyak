@@ -1,0 +1,163 @@
+1. Hozza létre a home könyvtárában az ábrán látható könyvtárakat!
+
+mkdir -p SzgepGyak/Proba/Test/Unix
+cd SzgepGyak
+mkdir -p Check/Tmp
+cd Proba
+mkdir Linux
+
+
+
+2. Lépjen a /etc könyvtárba! Jelenítse meg az innen nyíló könyvtárrendszert a tree paranccsal!
+
+cd /etc
+tree -d
+
+
+
+3. Másolja a /etc könyvtár passwd fájlját a Proba könyvtárba!
+
+sudo cp /etc/passwd SzgepGyak/Proba/
+
+
+
+4. Másolja a /etc könyvtár shadow nevű fájlját a test könyvtárba!
+
+sudo cp /etc/shadow SzgepGyak/Proba/Test/
+
+
+
+5. Másolja a /etc könyvtár összes conf kiterjesztésű fájlját a Linux könyvtárba!
+
+sudo cp /etc/*.conf SzgepGyak/Proba/Linux/
+
+
+
+6. Másolja a /etc könyvtár azon fájljait, melynek második karaktere a, a negyedik s, és d-re végződnek, a Check könyvtárba!
+
+cp /etc/?a?s*d SzgepGyak/Check
+
+
+
+7. Helyezze át a Test könyvtár minden fájlját a Linux könyvtárba!
+
+mv SzgepGyak/Proba/Test SzgepGyak/Proba/Linux
+
+
+
+8. Hozzon létre egy új fájlt a Check könyvtárban, melynek neve Adatok.txt!
+
+touch SzgepGyak/Check/Adatok.txt
+
+
+
+9. Törölje a Linux könyvtár fájljait!
+
+rm SzgepGyak/Proba/Linux/*
+
+
+
+10. Törölje a Próba könyvtárat!
+
+rm -r SzgepGyak/Proba
+
+
+
+11. Jelenítse meg a képernyőn a /etc/passwd fájl tartalmát!
+
+cat /etc/passwd
+
+
+
+12. Az előző feladatot végezze el a less paranccsal is! Értelmezze a fájl szerkezetét! * Lapozzon a szövegben, keresse meg a Pista nevű felhasználókat! Lépjen ki a less-ből!
+
+less /etc/passwd
+
+
+
+13. Állapítsa meg a következő fájlok típusát: /bin/bash, /etc/passwd, /var/log/syslog!
+
+file /bin/bash
+file /etc/passwd
+file /var/log/syslog
+
+
+
+a.) Hozza létre a következő mappa szerkezetet!
+
+mkdir -p k1ifab/{bokor/{banan,mogyoro,barack},fa/korte,land/{szeder,kokusz}}
+
+
+
+b.) Készítsen másolatot:
+
+- a neptunkod/ land/szeder katalógusról a neptunkod/fa katalógusba
+
+cp -r k1ifab/land/szeder k1ifab/fa/
+
+- a neptunkod /bokor/banan katalógusról a neptunkod /fa katalógusba
+
+cp -r k1ifab/bokor/banan k1ifab/fa/
+
+
+
+c.) Végezze el a következő áthelyezéseket:
+
+- a neptunkod /bokor/barack katalógust helyezze át a neptunkod /fa katalógusba
+
+mv k1ifab/bokor/barack k1ifab/fa/
+
+- a neptunkod /land /kokusz katalógust helyezze át a neptunkod/fa katalógusba
+
+mv k1ifab/land/kokusz k1ifab/fa/
+
+
+
+d.) Törölje a neptunkod/land katalógust a teljes tartalmával.
+
+rm -r k1ifab/land
+
+Hozza létre a következő szöveges állományokat:
+
+- neptunkod/bokor/banan/ leiras.txt
+
+touch k1ifab/bokor/banan/leiras.txt
+
+- neptunkod/tree/felsorolas.txt
+
+touch k1ifab/fa/felsorolas.txt
+
+
+e.) A leiras.txt szöveges állományba írjon 3 sort a barackról.
+
+echo -e "Barackfa leirasa\ngyumulcse a barack\nnagyon finom" > k1ifab/fa/barack/leiras.txt
+
+A felsorolas szöveges állományba soroljon fel legalább 5 csoporttársa nevét.
+
+echo -e "Adamcsik Benguz\nBalogh Botond\nBehinya Adam" > k1ifab/fa/felsorolas.txt
+
+
+
+g.) Térjen vissza a gyökérmappába és keresse meg az összes olyan file-t, amelyek nevének második
+betűje e.
+
+find . -type f -name '?e*'
+
+
+
+h.) Tegye mindenki számára olvashatóvá a felsorolas.txt file-t.
+
+chmod a+r k1ifab/fa/felsorolas.txt
+
+
+
+i.) Jelenítse meg, hogy mennyi helyet foglal a merevlemezen a neptunkod mappa az al-mappáival
+együtt.
+
+du -h k1ifab
+
+
+
+j.) Rendezze ABC-szerint a felsorolas.txt file tartalmát.
+
+sort k1ifab/fa/felsorolas.txt

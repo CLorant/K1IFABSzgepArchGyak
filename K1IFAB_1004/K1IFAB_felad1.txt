@@ -1,0 +1,163 @@
+1. Melyik az aktuális jegyzék?
+
+pwd
+
+
+
+2. Lépjen a gyökérjegyzékbe!
+
+cd /
+
+
+
+3. Lépjen a saját home jegyzékébe!
+
+cd ~
+
+
+
+4. Lépjen a rendszergazda home jegyzékébe (a jogosultsági rendszer valószínűleg megakadályozza
+majd)!
+
+cd /home/root
+
+
+
+5. Lépjen a gyökérjegyzékből nyíló etc jegyzékbe!
+
+cd /etc
+
+
+
+6. Lépjen vissza egy szinttel feljebb!
+
+cd ..
+
+
+
+7. Jelenítse meg az aktuális jegyzék tartalomjegyzékét!
+
+ls -l
+
+
+
+8. Jelenítse meg a /etc, majd a /var/log jegyzék tartalomjegyzékét is (részletes adatokkal)!
+
+ls -l /etc
+ls -l /var/log
+
+
+
+9. Lépjen a saját home jegyzékébe! Hozzon létre egy új aljegyzéket, a neve legyen Teszt!
+
+cd ~
+mkdir Teszt
+
+
+
+10. Egyetlen paranccsal hozzon létre ebben két újabb jegyzéket, T1-et és T2-t!
+
+mkdir Teszt/T1 Teszt/T2
+
+
+
+11. Rajzoltassa ki a jegyzékstruktúrát a tree paranccsal!
+
+tree
+
+
+
+12. Egyetlen paranccsal hozzon létre a Teszt jegyzékből nyíló három, egymásból nyíló jegyzéket: Unix/Linux/Debian néven!
+
+mkdir -p Teszt/Unix/Linux/Debian
+
+
+
+13. Nevezze át a Debian jegyzéket Deb-re!
+
+mv Teszt/Unix/Linux/Debian Teszt/Unix/Linux/Deb
+
+
+
+14. Helyezze át a Deb jegyzéket a T1-be!
+
+mv Teszt/Unix/Linux/Deb Teszt/T1/
+
+
+
+15. Törölje a T1 jegyzéket!
+
+rm -r Teszt/T1
+
+
+
+16. Egyetlen paranccsal törölje a Teszt jegyzéket!
+
+rm -r Teszt
+
+
+
+17. Jelenítse meg az aktuális jegyzék tartalmát!
+
+ls
+
+
+
+18. Jelenítse meg a /etc jegyzék tartalmát részletesen!
+
+ls -l /etc
+
+
+
+19. Jelenítse meg a /etc jegyzék conf kiterjesztésű fájljait!
+
+ls /etc/*.conf
+
+
+
+20. Jelenítse meg a /etc könyvtár azon fájljait, melyek p-vel kezdődnek!
+
+ls /etc/p*
+
+
+
+21. Jelenítse meg a /etc jegyzék azon fájljait, melyek f-re végződnek!
+
+ls /etc/*f
+
+
+
+22. Jelenítse meg a /etc jegyzék azon fájljait, melyek első karaktere p, a harmadik s és d-re végződnek!
+
+ls /etc/p?s*d
+
+
+
+23. Jelenítse meg a home jegyzékének tartalmát a benne levő rejtett fájlokkal együtt!
+
+ls -a ~
+
+
+
+24. Jelenítse meg a /etc jegyzék azon fájljait, melyek második karaktere a vagy n!
+
+ls /etc/[an]*
+
+
+
+25. Jelenítse meg a /etc jegyzék azon fájljait, melyek második karaktere nem a és nem n!
+
+ls /etc/[^an]*
+
+
+
+26. Jelenítse meg a rendszer összes fájlját és jegyzékét (hosszan fut)!
+
+find /
+
+
+
+27. Indítsa el a Midnight Commander-t!
+
+mc
+
