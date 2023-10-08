@@ -138,8 +138,13 @@ echo -e "Adamcsik Benguz\nBalogh Botond\nBehinya Adam" > k1ifab/fa/felsorolas.tx
 
 
 
-g.) Térjen vissza a gyökérmappába és keresse meg az összes olyan file-t, amelyek nevének második
-betűje e.
+f.) Listázza a neptunkod mappa tartalmát úgy, hogy megjelenjen az almappák tartalma is.
+
+find kifab
+
+
+
+g.) Térjen vissza a gyökérmappába és keresse meg az összes olyan file-t, amelyek nevének második betűje e.
 
 find . -type f -name '?e*'
 
@@ -151,8 +156,7 @@ chmod a+r k1ifab/fa/felsorolas.txt
 
 
 
-i.) Jelenítse meg, hogy mennyi helyet foglal a merevlemezen a neptunkod mappa az al-mappáival
-együtt.
+i.) Jelenítse meg, hogy mennyi helyet foglal a merevlemezen a neptunkod mappa az al-mappáival együtt.
 
 du -h k1ifab
 
