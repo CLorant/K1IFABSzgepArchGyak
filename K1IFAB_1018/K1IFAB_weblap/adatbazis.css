@@ -1,0 +1,14 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.jobb {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#adatbazis_kep {
+    width: 90%;
+}
