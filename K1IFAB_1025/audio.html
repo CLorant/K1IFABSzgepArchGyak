@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles.css">
+    
+    <title>Audió lejátszása</title>
+</head>
+<body>
+    <header>
+        Audió (zene, hang) lejátszása
+    </header>
+    <main>
+        <audio id="zene" controls>
+            <source src="./media/jazzy.mp3" type="audio/mpeg">
+            A böngésződ nem támogatja a HTML audió lejátszását.
+        </audio>
+
+        <audio id="effekt">
+            <source src="./media/yes.mp3" type="audio/mpeg">
+            A böngésződ nem támogatja a HTML audió lejátszását.
+        </audio>
+
+        <section id="audioLejatszas" class="gombTarolo">
+            <h3>Lejátszás</h3>
+            <div>
+                <button onclick="videom.play()">Lejátszás / Szünet</button>
+                <button onclick="pickEffect('yes.mp3')">Pozitív</button>
+                <button onclick="pickEffect('no.mp3')">Negatív</button>
+            </div>
+        </section>
+
+        <section id="audioSebesseg" class="gombTarolo">
+            <h3>Sebesség</h3>
+            <div>
+                <button onclick="zenem.playbackRate=0.2">Nagyon Lassú</button>
+                <button onclick="zenem.playbackRate=0.5">Lassú</button>
+                <button onclick="zenem.playbackRate=1">Normál</button>
+                <button onclick="zenem.playbackRate=2">Gyorsabb</button>
+                <button onclick="zenem.playbackRate=4">Nagyon Gyors</button>
+            </div>
+        </section>
+
+        <section id="audioInfo" class="gombTarolo">
+            <h3>Információ</h3>
+            <div>
+                <button onclick="alert(zenem.ended)">Befejeződött-e</button>
+                <button onclick="alert(zenem.duration)">Videó Hossza (mp)</button>
+                <button onclick="alert(zenem.currentTime)">Jelenlegi Pozíció</button>
+                <button onclick="zenem.currentTime=90">Ugrás Másfél Perchez</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Forrás: 
+        <a href="https://www.w3schools.com/html/html5_audio.asp" target="blank" rel="noreferrer">
+            https://www.w3schools.com/html/html5_audio.asp
+        </a>
+    </footer>
+    <script src="./scripts.js"></script>
+</body>
+</html>

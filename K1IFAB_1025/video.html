@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Videó lejátszása</title>
+</head>
+<body>
+    <header>
+        Videó lejátszása
+    </header>
+    <main>
+        <video id="videom" width="640" controls>
+            <source src="./media/HTML5_video2.mp4" type="video/mp4">
+            A böngésződ nem támogatja a HTML videók lejátszását.
+        </video>
+
+        <section id="videoLejatszas" class="gombTarolo">
+            <h3>Lejátszás</h3>
+            <div>
+                <button onclick="videom.play()">Indítás</button>
+                <button onclick="videom.pause()">Leállítás</button>
+                <button onclick="playPauseVideo()">Indítás / Leállítás</button>
+            </div>
+        </section>
+
+        <section id="videoHangero" class="gombTarolo">
+            <h3>Hangerő</h3>
+            <div>
+                <button onclick="videom.volume=0">Néma</button>
+                <button onclick="videom.volume=0.2">Halk</button>
+                <button onclick="videom.volume=1">Hangos</button>
+            </div>
+            
+        </section>
+        
+        <section id="videoSebesseg" class="gombTarolo">
+            <h3>Sebesség</h3>
+            <div>
+                <button onclick="videom.playbackRate=0.2">Nagyon Lassú</button>
+                <button onclick="videom.playbackRate=0.5">Lassú</button>
+                <button onclick="videom.playbackRate=1">Normál</button>
+                <button onclick="videom.playbackRate=2">Gyorsabb</button>
+                <button onclick="videom.playbackRate=4">Nagyon Gyors</button>
+            </div>
+        </section>
+
+        <section id="videoSzelesseg" class="gombTarolo">
+            <h3>Szélesség</h3>
+            <div>
+                <button onclick="videom.width=320">Kicsi</button>
+                <button onclick="videom.width=640">Normál</button>
+                <button onclick="videom.width=1024">Nagy</button>
+            </div>
+        </section>
+
+        <section id="videoInfo" class="gombTarolo">
+            <h3>Információ</h3>
+            <div>
+                <button onclick="alert(videom.ended)">Befejeződött-e</button>
+                <button onclick="alert(videom.duration)">Videó Hossza (mp)</button>
+                <button onclick="alert(videom.currentTime)">Jelenlegi Pozíció</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Forrás: 
+        <a href="https://www.w3schools.com/html/html5_video.asp" target="blank" rel="noreferrer">
+            https://www.w3schools.com/html/html5_video.asp
+        </a>
+    </footer>
+    <script src="./scripts.js"></script>
+</body>
+</html>

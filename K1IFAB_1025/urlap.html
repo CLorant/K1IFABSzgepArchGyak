@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Űrlap</title>
+</head>
+
+<body>
+    <header id="fejlec" class="fejlec">
+        HTML5 űrlap
+    </header>
+    
+    <main id="tartalom" class="urlap">
+        K1IFAB
+        <form id="urlap" name="urlap" action="feldolgozo5_1.php" method="GET" target="_self">
+            <div>
+                Név:
+                <input type="text" id="nev" name="nev" placeholder="Írd be a neved" autofocus autocomplete="off"
+                    required pattern="[a-zA-ZöüóõúéáúíÖÜÓÕÛÉÁÛÍ]{5,50}" />
+            </div>
+
+            <div>
+                PIN kód:
+                <input type="text" id="kod" name="kod" placeholder="Írd be a PIN kódod" autocomplete="off" required
+                    pattern="[0-9]{4}" />
+            </div>
+
+            <div>
+                Kedvenc gyümölcs:
+                <input type="text" name="gyumoles" list="gyumolcsok">
+                <datalist id="gyumolcsok">
+                    <option value="dinnye">d</option>
+                    <option value="banán"></option>
+                    <option value="ananász"></option>
+                    <option value="eper">250Ft/kg</option>
+                    <option value="alma">180Ft/kg</option>
+                </datalist>
+            </div>
+
+            <div>
+                Életkor:
+                <input type="number" name="eletkor" min="10" max="80">
+            </div>
+
+            <div>
+                Lábméret:
+                <input type="number" name="labmeret" min="25" max="50" step="0.5">
+            </div>
+
+            <div>
+                Önbizalom:&nbsp;&nbsp;&nbsp;0
+                <input type="range" name="onbizalom" min="0" max="100">
+            </div>
+        </form>
+
+        <input type="submit" value="ELKÜLDÖM" form="urlap" formaction="feldolgozo5_1.php" formmethod="POST">
+        <input type="submit" value="Elküldöm Ellenőrzés Nélkül" form="urlap" formnovalidate formtarget="blank">
+    </main>
+    <footer>
+        Forrás:
+        <a href="http://html5doctor.com/html5-forms-introduction-and-new-attributes" target="blank" rel="noreferrer">
+            http://html5doctor.com/html5-forms-introduction-and-new-attributes
+        </a>
+        Formátumok:
+        <a href="http://html5pattern.com" target="blank" rel="noreferrer">
+            http://html5pattern.com
+        </a>
+        JavaScript REGEXP:
+        <a href="http://www.w3schools.com/js/js_regexp.asp" target="blank" rel="noreferrer">
+            http://www.w3schools.com/js/js_regexp.asp
+        </a>
+    </footer>
+</body>
+
+</html>
