@@ -28,7 +28,8 @@
                 </button>
 
                 <a href="./kezdolap.html">
-                    <img src="./media/logo.webp" alt="logo" decoding="async" class="navbar-brand" width="160" height="50">
+                    <img src="./media/logo.webp" alt="logo" decoding="async" class="navbar-brand" width="160"
+                        height="50">
                 </a>
 
                 <div class="collapse navbar-collapse">
@@ -59,13 +60,354 @@
         </nav>
     </header>
 
-    <main>
+    <main class="d-flex justify-content-between flex-column">
+        <section id="diszkret-matematika">
+            <h1 class="text-center">Diszkrét Matematika I.</h1>
+            <article class="d-flex flex-row justify-content-between">
+                <ol class="py-5">
+                    <li>
+                        <a href="#halmazok">Halmazok</a>
+                    </li>
+                    <li>
+                        <a href="#teljes-indukcio">Teljes Indukció</a>
+                    </li>
+                    <li>
+                        <a href="#komplex-szamok">Komplex számok</a>
+                    </li>
+                    <li>
+                        <a href="#trigonometrikus-alak">Komplex számok trigonometrikus alakja</a>
+                    </li>
+                    <li>
+                        <a href="#resztest-reszgyuru">Résztest, részgyűrű</a>
+                    </li>
+                    <li>
+                        <a href="#polinomok">Polinomok</a>
+                    </li>
+                    <li>
+                        <a href="#lnko">Legnagyobb közös osztó</a>
+                    </li>
+                    <li>
+                        <a href="#irreducibilitas">Irreducibilitás</a>
+                    </li>
+                    <li>
+                        <a href="#kombinatorika">Kombinatorika</a>
+                    </li>
+                </ol>
+                <a href="https://hu.wikipedia.org/wiki/Diszkr%C3%A9t_matematika" target="_blank" rel="noreferrer"
+                    class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/diszkret-matematika/0-diszkret-matematika.webp"
+                        alt="Wikipédia: Diszkrét Matematika" title="Wikipédia: Diszkrét Matematika" decoding="async"
+                        class="align-self-center rounded" width="100%" height="100%">
+                    <p>Wikipédia: Diszkrét Matematika</p>
+                </a>
+            </article>
 
+
+            <h2 id="halmazok">1. Halmazok</h2>
+            <article class="d-flex flex-row justify-content-between">
+                <p>
+                    A halmaz a matematika egyik legalapvetőbb fogalma, melyet leginkább az „összesség”,
+                    „sokaság”
+                    szavakkal tudunk körülírni (egy Georg Cantor által adott körülírását ld. lentebb); de mivel igazából
+                    alapfogalom, így nem tartjuk definiálandónak. A halmazok általános tulajdonságaival a matematika
+                    egyik ága, a halmazelmélet foglalkozik.
+                    <br><br>
+                    A modern matematika alapvető, egységes tárgyalásmódot és számos tudományos eredményt hozó
+                    hozzáállását fejezi ki az a kijelentés, miszerint végső soron minden, a matematika által vizsgált
+                    dolog: halmaz. Szakszerűbben fogalmazva, a matematika teljes egészének, de legalábbis minden
+                    hagyományosan vizsgált területének (számelmélet, geometria, valószínűségszámítás stb.) megadható a
+                    halmazelméleti modellje. Így, annak ellenére, hogy a halmazelmélet csak a 19. században
+                    fejlődött
+                    ki, mára a modern matematika minden ágának ez a tudományág (a matematikai logika mellett) az alapja.
+                    A matematikának ez a jelenleg is uralkodó „halmazelméleti” paradigmája elsősorban a huszadik
+                    században működő matematikustársaság, a Bourbaki-csoport munkásságának köszönhető. A halmazelméleti
+                    ismeretek az elemi iskolai matematika részét is képezik.
+                    <br><br>
+                    A halmazelmélet eredeti és korai formája, a naiv halmazelmélet, ellentmondásosnak bizonyult.
+                    Ezért a
+                    matematikusok létrehoztak más, különféle axiómarendszerekre épülő, ún. axiomatikus
+                    halmazelméleteket is.
+                </p>
+                <a href="https://hu.wikipedia.org/wiki/Halmaz_(matematika)" target="_blank" rel="noreferrer"
+                    class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/diszkret-matematika/1-halmazok.webp" alt="Wikipédia: Halmaz"
+                        title="Wikipédia: Halmaz" decoding="async" class="align-self-center rounded" width="100%"
+                        height="100%">
+                    <p>Wikipédia: Halmaz</p>
+                </a>
+            </article>
+
+            <h2 id="teljes-indukcio">2. Teljes Indukció</h2>
+            <article class="d-flex flex-row justify-content-between">
+                <p>
+                    A teljes indukció (ritkábban: matematikai indukció) a matematika egyik legfontosabb és leggyakrabban
+                    használt bizonyítási módszere a természetes számok körében. A teljes indukció elve a következő: Ha
+                    egy tulajdonság igaz 1-re (n=1), továbbá ez a tulajdonság olyan természetű, hogy öröklődik a
+                    természetes számok rákövetkezése során (tehát n-ről n+1-re), akkor ezzel a tulajdonsággal az összes
+                    természetes szám rendelkezik.
+                    <br><br>
+                    A módszer segítségével egyszerre megszámlálhatóan végtelen sok állítást lehet bizonyítani. A
+                    végtelen sok állítást sorba rendezzük, majd az így kapott sorozat első állítását igazoljuk. Ezután
+                    következik a teljes indukció „lelke”, az indukciós lépés. Ez annak az állításnak a bizonyítását
+                    jelenti, hogy ha feltesszük, hogy az n-edik állítás igaz, akkor abból következik az n+1-edik állítás
+                    igazsága is. Az első állítás igazsága és az indukciós lépés együtt már az összes állítás igazságát
+                    is bizonyítja.
+                </p>
+                <a href="https://hu.wikipedia.org/wiki/Teljes_indukci%C3%B3" target="_blank" rel="noreferrer"
+                    class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/diszkret-matematika/2-teljes-indukcio.webp" alt="Wikipédia: Teljes Indukció"
+                        title="Wikipédia: Teljes Indukció" decoding="async" class="align-self-center rounded"
+                        width="100%" height="100%">
+                    <p>Wikipédia: Teljes Indukció</p>
+                </a>
+            </article>
+
+            <h2 id="komplex-szamok">3. Komplex számok</h2>
+            <article class="d-flex flex-row justify-content-between">
+                <p>
+                    A komplex számok halmaza a valós számhalmaz olyan bővítése, melyben elvégezhető a negatív számból
+                    való négyzetgyökvonás (a valós számok halmazával ellentétben, ahol negatív számnak nincs
+                    négyzetgyöke), valamint ennek folyományaként más, valósokon belül nem értelmezett műveletek is
+                    értelmezhetővé válnak. A valós szám fogalmának ilyen általánosítását a 16. századi algebrai
+                    problémák (casus irreducibilis) vetették fel, később a komplex számok a matematika más területein és
+                    a fizikában is alkalmazhatónak bizonyultak.
+                    <br><br>
+                    A komplex számok halmazát C betűvel jelöljük. Imaginárius (képzetes) egységnek az egyik olyan
+                    komplex számot nevezzük, amelynek a négyzete −1. Ennek jele i. (A másik komplex szám, melynek
+                    négyzete −1, a −i.)
+                    <br><br>
+                    A komplex számok körében nem lehetséges definiálni olyan ≤ rendezési relációt, mely „kompatibilis”
+                    az összeadás és szorzás műveletekkel, így nem alkotnak rendezett testet (bár egyéb módon a komplex
+                    számok teste rendezhető (például a lexikografikus rendezéssel), sőt a jólrendezési tétel alapján
+                    jólrendezhető is, csak az ilyen rendezések egyike sem lesz kompatibilis a hagyományos +, ·
+                    műveletekkel).
+                </p>
+                <a href="https://hu.wikipedia.org/wiki/Komplex_sz%C3%A1mok" target="_blank" rel="noreferrer"
+                    class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/diszkret-matematika/3-komplex-szamok.webp" alt="Wikipédia: Komplex számok"
+                        title="Wikipédia: Komplex számok" decoding="async" class="align-self-center rounded"
+                        width="100%" height="100%">
+                    <p>Wikipédia: Komplex számok</p>
+                </a>
+            </article>
+
+            <h2 id="trigonometrikus-alak">4. Komplex számok trigonometrikus alakja</h2>
+            <article class="d-flex flex-row justify-content-between">
+                <p>
+                    A geometria és a halmazelméleti modell összevetéséből kiderül, hogy a z = a + bi komplex szám
+                    felírható:
+                    <br><br>
+                    <code>
+                        z = r (cos φ + i sin Φ)
+                    </code>
+                    <br><br>
+                    alakban, ahol r nemnegatív szám z modulusa, a φ radiánban megadott szögérték az árkusza. Ekkor
+                    persze:
+                    <br><br>
+                    <code>
+                        a = r cos φ és
+                        <br>
+                        b = r sin φ
+                    </code>
+                    <br><br>
+                    A fordított reláció a sugarat ugyan igen, de az árkuszt nem egyértelműen fejezi ki:
+                    <br><br>
+                    <code>
+                        r = √(a^2 + b^2)
+                    </code>
+                    <br><br>
+                    Érdemes továbbá megemlíteni, hogy a komplex számokon értelmezett arg függvény az alábbi képlettel
+                    vezethető vissza az arctg2 függvényre:
+                    <br><br>
+                    <code>
+                        arg(a + b * i) = arctg2(b, a)
+                    </code>
+                    <br><br>
+                    Ennek az alaknak a komplex számok szorzásánál, hatványozásánál és a komplex számokból való
+                    gyökvonásnál vesszük hasznát. A z1 és z2 komplex számok triginometrius alakban felírt szorzata a
+                    geometriai modellhez hasonlóan:
+                    <br><br>
+                    <code>
+                        z1 * z2 = r1 r2 (cos (φ + ψ) + i sin (φ + ψ))
+                    </code>
+                    <br><br>
+                </p>
+                <a href="https://hu.wikipedia.org/wiki/Komplex_sz%C3%A1mok#Trigonometrikus_alak" target="_blank"
+                    rel="noreferrer" class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/diszkret-matematika/4-trigonometrikus-alak.webp"
+                        alt="Wikipédia: Komplex számok trigonometrikus alakja"
+                        title="Wikipédia: Komplex számok trigonometrikus alakja" decoding="async"
+                        class="align-self-center rounded" width="100%" height="100%">
+                    <p>Wikipédia: Komplex számok trigonometrikus alakja</p>    
+                </a>
+            </article>
+
+            <h2 id="resztest-reszgyuru">5. Résztest, részgyűrű</h2>
+            <article class="d-flex flex-row justify-content-between">
+                <p>
+                    Egy R gyűrű tartóhalmazának egy részhalmazát R egy részgyűrűjének hívjuk, ha az adott részhalmaz is
+                    gyűrűt alkot az R-beli összeadás és szorzás megszorítására. Ellenőrzésként a legfontosabb, hogy az
+                    adott művelet ne vezessen ki a gyűrűből.
+                    <br><br>
+                    Egy R gyűrű tartóhalmazának egy I részhalmazát R egy
+                    balideáljának nevezzük, ha bármely két I-beli elem különbsége (azaz az összeadás inverzét elvégezve)
+                    is I-beli, valamint egy tetszőleges R elem megszorozva egy tetszőleges I-beli elemmel balról, az
+                    eredmény szintén I-ben lesz. Röviden kifejezve komplexusműveletekkel:
+                    <br><br>
+                    <code>
+                        I − I ⊆ I és RI ⊆ I.
+                    </code>
+                    <br><br>
+                    Egy részhalmazt jobbideálnak nevezünk, ha a
+                    szorzás azonossága jobbról igaz, azaz <code>IR ⊆ I</code>. Amennyiben egy részhalmaz
+                    bal- és jobbideál egyszerre, akkor ideálnak nevezzük. Kommutatív gyűrűben nyilván minden bal- és
+                    jobbideál egyben ideál is, hiszen a szorzás ekkor felcserélhető. Az ideáloknak fontos szerepük van
+                    testbővítéseknél, ekkor egy irreducibilis polinom által generált ideál szerinti faktorgyűrűt
+                    vizsgálunk, ami test lesz, hiszen a szóban forgó ideál maximális. (Ezek viszonylag egyszerűen
+                    következnek a definíciókból).
+                </p>
+                <a href="https://hu.wikipedia.org/wiki/Gy%C5%B1r%C5%B1_(matematika)" target="_blank" rel="noreferrer"
+                    class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/diszkret-matematika/5-resztest-reszgyuru.webp" alt="Wikipédia: Gyűrű"
+                        title="Wikipédia: Gyűrű" decoding="async" class="align-self-center rounded" width="100%"
+                        height="100%">
+                    <p>Wikipédia: Gyűrű</p>
+                </a>
+            </article>
+
+            <h2 id="polinomok">6. Polinomok</h2>
+            <article class="d-flex flex-row justify-content-between">
+                <p>
+                    A matematikában a polinom (avagy többtagú algebrai egész kifejezés) egy olyan kifejezés, melyben
+                    csak számok és változók nemnegatív egész kitevőjű hatványainak szorzatai, illetve ilyenek összegei
+                    szerepelnek. Például:
+                    <br><br>
+                    <code>
+                        p(x,y,z,u) = 5x 4y 6 - 3x z³ + 11y 15u 7
+                        <br>
+                        q(x) = 2x² + 6x + 9
+                        <br>
+                        r(x,y) = x³ + 3x² y + 3x² y + y³
+                    </code>
+                    <br><br>
+                    A polinomban a számokkal szorzott hatványszorzatokat monomoknak (avagy egytagú algebrai egész
+                    kifejezésnek) nevezzük (például p-nél az 5x4y6, a -3xz³ és a 11y15u7 tagok).
+                    <br><br>
+                    A polinom gyökeinek meghatározása, vagyis különféle algebrai egyenletek megoldása már régóta a
+                    matematika fontos problémái közé tartozik. A mai praktikus jelölések a 15. században kezdtek el
+                    kifejlődni, addig általában az volt a szokás, hogy egy egyenletet szavakkal írtak le vagy az ókori
+                    Kínában például a változók szerint „ábrákat” készítettek róluk.
+                    <br><br>
+                    Az egyenlőségjelet először Robert Recorde használta a 16. században, és ugyanebben az időben terjedt
+                    el a „+” jel használata az összeadásra, valamint a „−” jel használata a kivonásra. René Descartes
+                    volt az, aki elkezdte terjeszteni azt a ma is használt jelölésmódot, hogy a konstansok leírására az
+                    ábécé elejéről választunk betűket, míg a változókhoz az ábécé végéről. És ugyancsak ő volt az, aki
+                    először felső indexbe írta egy változó kitevőjét.
+                </p>
+                <a href="https://hu.wikipedia.org/wiki/Polinom" target="_blank" rel="noreferrer"
+                    class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/diszkret-matematika/6-polinomok.webp" alt="Wikipédia: Polinomok"
+                        title="Wikipédia: Polinomok" decoding="async" class="align-self-center rounded" width="100%"
+                        height="100%">
+                    <p>Wikipédia: Polinomok</p>
+                </a>
+            </article>
+
+            <h2 id="lnko">7. Legnagyobb közös osztó</h2>
+            <article class="d-flex flex-row justify-content-between">
+                <p>
+                    A legnagyobb közös osztó a matematikában véges sok szám olyan közös osztója (azaz olyan szám, amely
+                    a véges sok szám mindegyikét osztja), amely bármely más közös osztónál nagyobb.
+                    <br><br>
+                    Két (nem egyszerre nulla) egész szám közös osztói közül a lehetséges legnagyobb nem nulla pozitív
+                    egész, amely mindkét egész számot (maradék nélkül) osztja.
+                    <br><br>
+                    A definíció másképp is megfogalmazható: két szám legnagyobb közös osztója a két szám ama közös
+                    osztója, amely minden közös osztónak többszöröse. Ez a definíció előjeltől eltekintve egyértelmű.
+                    <br><br>
+                    Az a,b számok ln. k. o.-jának szokásos jelölése a magyar szakirodalomban (a, b) vagy lnko(a, b); az
+                    angol irodalomban gcd(a, b).
+                    <br><br>
+                    Például: lnko(12, 18) = 6, lnko(10, 5) = 5, lnko(-21, 9) = 3.
+                </p>
+                <a href="https://hu.wikipedia.org/wiki/Legnagyobb_k%C3%B6z%C3%B6s_oszt%C3%B3" target="_blank"
+                    rel="noreferrer" class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/diszkret-matematika/7-lnko.webp" alt="Wikipédia: Legnagyobb közös osztó"
+                        title="Wikipédia: Legnagyobb közös osztó" decoding="async" class="align-self-center rounded"
+                        width="100%" height="100%">
+                    <p>Wikipédia: Legnagyobb közös osztó</p>                
+                </a>
+            </article>
+
+            <h2 id="irreducibilitas">8. Irreducibilitás</h2>
+            <article class="d-flex flex-row justify-content-between">
+                <p>
+                    A polinomok számelmélete, a matematika algebrai számelmélet nevű ága egyik fejezeteként, olyan
+                    számelméleti eredetű fogalmakat vizsgál és általánosít polinomokra, mint pl. az oszthatóság, az
+                    irreducibilitás és reducibilitás (felbonthatatlanság és felbonthatóság), a maradékos osztás, a
+                    legnagyobb közös osztó és legkisebb közös többszörös vagy a prímfaktorizáció.
+                    <br><br>
+                    Az egyhatározatlanú avagy egyváltozós polinomok tekinthetők olyan véges sok nem nulla elemmel
+                    rendelkező sorozatoknak, melyek elemei egy R gyűrűből kerülnek ki. Ekkor a sorozat elemeit az
+                    annyiadik fokú tag együtthatóját jelenti:
+                    <br><br>
+                    <code>
+                        x² + 5x + 6 = (6, 5, 1, 0, 0, 0, 0, ...)
+                    </code>
+                    <br><br>
+                    Nemnulla egyhatározatlanú polinom foka a legnagyobb nem nulla indexe (az indexelést 0-ról indítjuk).
+                    Például, ha a ∈ R nem nulla, akkor (a,0,0,0,0,…) konstanspolinom foka 0. A (0,0,0,0,…) nullapolinom
+                    foka nincs értelmezve (nincs legnagyobb indexű nemnulla eleme). A fok jele, mint fent: deg(p).
+                </p>
+                <a href="https://hu.wikipedia.org/wiki/Polinomok_sz%C3%A1melm%C3%A9lete" target="_blank"
+                    rel="noreferrer" class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/diszkret-matematika/8-irreducibilitas.webp"
+                        alt="Wikipédia: Polinomok számelmélete" title="Wikipédia: Polinomok számelmélete"
+                        decoding="async" class="align-self-center rounded" width="100%" height="100%">
+                    <p>Wikipédia: Polinomok számelmélete</p>       
+                </a>
+            </article>
+
+            <h2 id="kombinatorika">9. Kombinatorika</h2>
+            <article class="d-flex flex-row justify-content-between">
+                <p>
+                    A kombinatorika (szó szerinti jelentése „kapcsolástan”) a matematika azon területe, amely egy véges
+                    halmaz elemeinek valamilyen szabály alapján történő csoportosításával, kiválasztásával, sorrendbe
+                    rakásával foglalkozik. Az elemi kombinatorika tárgyai a(z) (ismétléses és ismétlés nélküli)
+                    permutációk, kombinációk és variációk.
+                    <br><br>
+                    Ismétlés nélküli permutáció alatt néhány különböző dolognak a sorba rendezését értjük. Az "ismétlés
+                    nélküli" arra utal, hogy a sorba rendezendő elemek különbözőek, azaz nem ismétlődnek. Egy n elemű
+                    halmaz összes permutációinak a száma:
+                    <br><br>
+                    <code>
+                        Pn = n! = n * (n - 1) * (n - 2) * ... * 2 * 1
+                    </code>
+                    <br><br>
+                    Az ismétléses permutáció képlete:
+                    <br><br>
+                    <code>
+                        Pn (k1;k2;...;ks) = n! / (k1! * k2! * ... * ks!)
+                    </code>
+                    <br><br>
+                    ahol n a sorba rendezni kívánt összes elem száma, k1 az egyik fajta elemek száma, k2 a másik fajta
+                    elemek száma stb.
+                </p>
+                <a href="https://hu.wikipedia.org/wiki/Kombinatorika" target="_blank" rel="noreferrer"
+                    class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/diszkret-matematika//9-kombinatorika.webp" alt="Wikipédia: Kombinatorika"
+                        title="Wikipédia: Kombinatorika" decoding="async" class="align-self-center rounded" width="100%"
+                        height="100%">
+                    <p>Wikipédia: Kombinatorika</p>  
+                </a>
+            </article>
+        </section>
     </main>
 
     <footer class="pt-4">
         <div class="col-sm-12 text-center">
-            <a href="https://github.com/CLorant/K1IFABSzgepArchGyak/tree/main/SemTaskK1IFAB" target="_blank" rel="noreferrer">
+            <a href="https://github.com/CLorant/K1IFABSzgepArchGyak/tree/main/SemTaskK1IFAB" target="_blank"
+                rel="noreferrer">
                 <img src="./media/github.svg" alt="github" title="github">
             </a>
             <p>Készítette: Czibik Lóránt Patrik</p>
