@@ -28,7 +28,8 @@
                 </button>
 
                 <a href="./kezdolap.html">
-                    <img src="./media/logo.webp" alt="logo" decoding="async" class="navbar-brand" width="160" height="50">
+                    <img src="./media/logo.webp" alt="logo" decoding="async" class="navbar-brand" width="160"
+                        height="50">
                 </a>
 
                 <div class="collapse navbar-collapse">
@@ -61,14 +62,140 @@
 
     <main class="d-flex justify-content-between flex-column">
         <section>
-            <h1 class="text-center">Programozás Alapjai</h1>
+            <h1 class="text-center mb-0">Programozás Alapjai</h1>
+            <h2>A tantárgy célkitűzése:</h2>
+            <p class="mx-4">
+                A tárgy egyik célja, hogy kialakítsa a hallgatókban a komplex számítási problémák analizálásának és
+                szisztematikus leírásának képességét. Ehhez megtanulják a számítási algoritmusok építőelemeit és
+                leírási módszereit. A tárgy másik célja az ANSI szabvány szerinti C programozási nyelv elsajátítása. Az
+                algoritmusokat ezen a nyelven implementáljuk.
+            </p>
+            <h2>A tantárgy tematikája:</h2>
+            <table>
+                <tr>
+                    <th>
+                        Hét
+                    </th>
+                    <th>
+                        Előadás, gyakorlat anyaga
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        1.
+                    </td>
+                    <td>
+                        A számítógép és programozása. Programozási nyelvek. A programkészítés menete. Algoritmusok és
+                        leírási módszereik. Számlálás és összegzés alapalgoritmusok.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2.
+                    </td>
+                    <td>
+                        A C programozási nyelv jellemzői és szintaktikai egységei. Eldöntés a kiválasztás
+                        alapalgoritmusok.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3.
+                    </td>
+                    <td>
+                        Operátorok és kifejezések, típuskonverzió a C nyelvben. A C program szerkezete. Integrátl
+                        programfejelesztő eszközök. Egyszerű ki- és bemeneti függvények. Szélsőérték kiválasztás
+                        alapalgoritmus.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        4.
+                    </td>
+                    <td>
+                        A C nyelv utasításai. Vezérlési szerkezetek C nyelvű implementációja. Keresés alapalgoritmus.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        5.
+                    </td>
+                    <td>
+                        Egydimenziós tömbök és mutatók. Tömbi algoritmusok. Véletlenszám generálás. Sztringek és kezelő
+                        függvényeik.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        6.
+                    </td>
+                    <td>
+                        Függvények, programtervezési alapelvek.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        7.
+                    </td>
+                    <td>
+                        Struktúrák, struktúra tömbök. Típusdefiníció. Dinamikus memóriakezelés. Önhivatkozó struktúrák.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        8.
+                    </td>
+                    <td>
+                        Tárolási osztályok. Moduláris programozás. Filekezelés. Saját függvénykönyvtár és header
+                        állomány készítése.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        9.
+                    </td>
+                    <td>
+                        Rekurzió, rendezés.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10.
+                    </td>
+                    <td>
+                        Kétdimenziós tömbök, mutató tömbök létrehozása és algoritmusai. Dinamikus memóriakezelés. Menü
+                        készítése. Függvénypointer.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        11.
+                    </td>
+                    <td>
+                        A main függvény paraméterei és visszatérési értéke. A C fordító működése, az előfeldolgozó
+                        feladatai. Kiválogatás és szétválogatás alapalgoritmusok.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        12.
+                    </td>
+                    <td>
+                        A C99/C11 szabvány új elemei. Kódolási szabvány. SE alapelvek. Unió, metszet, különbség,
+                        összefuttatás alapalgoritmusok.
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Segédlet</h2>
             <article class="d-flex flex-row justify-content-between">
                 <ol class="py-5">
                     <li>
                         <a href="#szamitogep-es-programozasa">A számítógép és programozása</a>
                     </li>
                     <li>
-                        <a href="#c-alapelemei">A C programozási nyelv alapelemei</a>
+                        <a href="#c-tortenete">A C programozási nyelv története</a>
                     </li>
                     <li>
                         <a href="#valtozok-tipusok">Változók, típusok</a>
@@ -77,7 +204,7 @@
                         <a href="#operatorok-kifejezesek">Operátorok és kifejezések</a>
                     </li>
                     <li>
-                        <a href="#c-utasitasai">A C nyelv utasításai</a>
+                        <a href="#preprocesszor-utasitasok">Preprocesszor utasítások</a>
                     </li>
                     <li>
                         <a href="#felteletes-utasitasok">Feltételes utasítások</a>
@@ -94,136 +221,353 @@
                 </ol>
                 <a href="https://hu.wikipedia.org/wiki/C_(programoz%C3%A1si_nyelv)" target="_blank" rel="noreferrer"
                     class="d-flex justify-content-end align-self-center flex-column">
-                    <img src="./media/programozas-alapjai/0-programozas-alapjai.webp"
-                        alt="Wikipédia: C (programozási nyelv)" title="Wikipédia: C (programozási nyelv)" decoding="async"
+                    <img src="./media/programozas-alapjai/0-programozas-alapjai.webp" alt="C (programozási nyelv)"
+                        title="C (programozási nyelv)" decoding="async" class="align-self-center rounded" width="100%"
+                        height="100%">
+                    <p>Wikipédia: C (programozási nyelv)</p>
+                </a>
+            </article>
+        </section>
+        <section>
+            <h2 id="szamitogep-es-programozasa">1. A számítógép és programozása</h2>
+            <article class="d-flex flex-row justify-content-around">
+                <p>
+                    A számítógép-programozás (vagy egyszerűen programozás) egy vagy több absztrakt algoritmus
+                    megvalósítását jelenti egy bizonyos programozási nyelven. A programozásban megtaláljuk a művészet, a
+                    tudomány, a matematika és a mérnöki tudomány elemeit.
+                    <br><br>
+                    A rendszerfejlesztés a programozást (az implementációt) a szoftverfejlesztés egyik lépéseként
+                    kezeli. A rendszerfejlesztés eszköztárát a feladat nagyságától, illetve céljától függően használják
+                    fel a programozás során: a szabványos modellező és rendszerfejlesztési módszertanok,
+                    projektmenedzsment, gyors alkalmazásfejlesztés, programverifikáció stb.
+                    <br><br>
+                    <b>Neumann-elvek, a tárolt programú számítógép</b>
+                    <br>
+                    - <b>Teljesen elektronikus működés</b> (ez Neumann idejében elektroncsöves felépítést jelentett,
+                    amit
+                    később a tranzisztoros, majd az integrált áramkörös felépítés követett)
+                    <br>
+                    - <b>Kettes számrendszer</b> használata (az összes művelet, pl. összeadás, szorzás, kettes
+                    számrendszerbeli
+                    logikai műveletekre redukálható)
+                    <br>
+                    - <b>Belső memória</b> használata
+                    <br>
+                    - <b>Tárolt program elve.</b> A számításokhoz szükséges adatokat és programutasításokat a gép azonos
+                    módon,
+                    egyaránt a belső memóriában (operatív tár) tárolja.
+                    <br>
+                    - <b>Soros utasításvégrehajtás</b> (az utasítások végrehajtása időben egymás után történjen; ennek
+                    egy
+                    alternatívája a párhuzamos utasításvégrehajtás, amikor több utasítás egyidejűleg is végrehajtható:
+                    ezt a lehetőséget Neumann elvetette)
+                    <br>
+                    - <b>Univerzális felhasználhatóság, Turing-gép</b> (programozhatóság; a különböző feladatok
+                    programokkal
+                    legyenek megoldva, nem pedig erre a célra épített hardverrel)
+                    <br>
+                    - <b>Szerkezet: öt funkcionális egység</b> (aritmetikai egység, központi vezérlőegység, memóriák,
+                    bemeneti
+                    és kimeneti egységek)
+                    <br>
+                    <br>
+                </p>
+                <a href="https://hu.wikipedia.org/wiki/Sz%C3%A1m%C3%ADt%C3%B3g%C3%A9p-programoz%C3%A1s" target="_blank"
+                    rel="noreferrer" class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/programozas-alapjai/1-szamitogep-es-programozasa.webp"
+                        alt="Számítógép-programozás" title="Számítógép-programozás" decoding="async"
                         class="align-self-center rounded" width="100%" height="100%">
+                    <p>Wikipédia: Számítógép-programozás</p>
+                </a>
+            </article>
+
+            <h2 id="c-tortenete">2. A C programozási nyelv története</h2>
+            <article class="d-flex flex-row justify-content-around">
+                <p>
+                    A C egy általános célú programozási nyelv, melyet Dennis Ritchie fejlesztett ki Ken Thompson
+                    segítségével 1969 és 1973 között a UNIX rendszerekre az AT&T Bell Labs-nál. Idővel jóformán
+                    minden operációs rendszerre készítettek C fordítóprogramot, és a legnépszerűbb programozási nyelvek
+                    egyikévé vált. Rendszerprogramozáshoz és felhasználói programok készítéséhez egyaránt jól
+                    használható. Az oktatásban és a számítógép-tudományban is jelentős szerepe van.
+                    <br><br>
+                    A C minden idők legszélesebb körben használt programozási nyelve, és a C fordítók elérhetők a
+                    ma elérhető számítógép-architektúrák és operációs rendszerek többségére. Elterjedésében fontos
+                    szerepet játszott a RISC technológia. A sokféle processzorhoz operációs rendszerekre volt szükség,
+                    és az eleve C-ben írt Unix volt a legkönnyebben portolható.
+                </p>
+                <a href="https://hu.wikipedia.org/wiki/C_(programoz%C3%A1si_nyelv)" target="_blank" rel="noreferrer"
+                    class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/programozas-alapjai/2-c-tortenete.webp" alt="Ken Thompson és Dennis Ritchie"
+                        title="Ken Thompson és Dennis Ritchie" decoding="async" class="align-self-center rounded"
+                        width="100%" height="100%">
                     <p>Wikipédia: C (programozási nyelv)</p>
                 </a>
             </article>
 
-            <h2 id="szamitogep-es-programozasa">A számítógép és programozása</h2>
-            <article class="d-flex flex-row justify-content-between">
+            <h2 id="valtozok-tipusok">3. Változók, típusok</h2>
+            <article class="d-flex flex-row justify-content-around">
                 <p>
-                    
+                    A programozásban a változó egy absztrakt tárolóhely, amelyet egy szimbolikus névvel társítanak,
+                    amelyben bizonyos ismert vagy ismeretlen mennyiségű adat van tárolva. Ezt értéknek nevezzük.
+                    Egyszerűbben fogalmazva, a változó egy elnevezett tároló azonos típusú adatok vagy bitkészletek
+                    számára (mint például egész szám, lebegőpontos szám, karakterlánc stb.). A változó társítva,
+                    azonosítva van egy memóriacímmel. A változó nevével a tárolt értékre, valamint magára a változóra is
+                    hivatkozunk, ez a kontextustól függ. A név és a tartalom szétválasztása lehetővé teszi, hogy a név
+                    az általa képviselt pontos információtól függetlenül használható legyen. A forráskódban lévő
+                    azonosítót futási időben köti az értékhez, így a változó értéke a program végrehajtása során
+                    változhat.
+                    <br><br>
+                    <b>A C nyelv az alábbi típusokkal tud műveletet végezni:</b>
+                    <br>
+                    - int
+                    <br>
+                    - unsigned int
+                    <br>
+                    - signed long
+                    <br>
+                    - unsigned long
+                    <br>
+                    - signed long long
+                    <br>
+                    - unsigned long long
+                    <br>
+                    - double
+                    <br>
+                    - long double
                 </p>
-                <a href="" target="_blank" rel="noreferrer"
-                    class="d-flex justify-content-end align-self-center flex-column">
-                    <img src="./media" alt=""
-                        title="" decoding="async" class="align-self-center rounded" width="100%"
-                        height="100%">
-                    <p></p>  
+                <a href="https://hu.wikipedia.org/wiki/C_(programoz%C3%A1si_nyelv)#Adatt%C3%ADpusok" target="_blank"
+                    rel="noreferrer" class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/programozas-alapjai/3-valtozok-tipusok.webp" alt="Változó" title="Változó"
+                        decoding="async" class="align-self-center rounded" width="100%" height="100%">
+                    <p>Wikipédia: C (programozási nyelv) - Adattípusok</p>
                 </a>
             </article>
 
-            <h2 id="c-alapelemei">A C programozási nyelv alapelemei</h2>
-            <article class="d-flex flex-row justify-content-between">
+            <h2 id="operatorok-kifejezesek">4. Operátorok és kifejezések</h2>
+            <article class="d-flex flex-row justify-content-around">
                 <p>
-                    
+                    Aritmetikai utasításnak egy pontosvesszővel lezárt aritmetikai kifejezést nevezünk. Az aritmetikai
+                    kifejezés változók vagy konstansok és műveletek kombinációja. (A C-ben csak aritmetikai művelet
+                    létezik, ezért a jelzőt el lehet hagyni.)
+                    <br><br>
+                    Az aritmetikai utasításban nem okvetlenül van értékadás: aritmetikai utasítás lehet egy
+                    függvényhívás, de szintaktikusan helyes a 1; utasítás is, bár a fordítóprogram ilyenkor
+                    figyelmeztet, hogy az utasításnak nincs semmilyen hatása.
+                    <br><br>
+                    A C-ben az értékadás ugyanolyan aritmetikai művelet, mint pl. a szorzás.
                 </p>
-                <a href="" target="_blank" rel="noreferrer"
-                    class="d-flex justify-content-end align-self-center flex-column">
-                    <img src="./media" alt=""
-                        title="" decoding="async" class="align-self-center rounded" width="100%"
-                        height="100%">
-                    <p></p>  
+                <a href="https://hu.wikipedia.org/wiki/C_(programoz%C3%A1si_nyelv)#Aritmetikai_utas%C3%ADt%C3%A1sok"
+                    target="_blank" rel="noreferrer" class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/programozas-alapjai/4-operatorok-kifejezesek.webp" alt="" title=""
+                        decoding="async" class="align-self-center rounded" width="100%" height="100%">
+                    <p>Wikipédia: C (programozási nyelv) - Aritmetikai utasítások</p>
                 </a>
             </article>
 
-            <h2 id="valtozok-tipusok">Változók, típusok</h2>
-            <article class="d-flex flex-row justify-content-between">
+            <h2 id="preprocesszor-utasitasok">5. Preprocesszor utasítások</h2>
+            <article class="d-flex flex-row justify-content-around">
                 <p>
-                    
+                    A preprocesszor-utasítások hatására a fordítás első menete a forrásprogramon hajt végre
+                    módosításokat, melynek eredménye a preprocesszor-utasítás nélküli C-program.
+                    <br><br>
+                    A preprocesszor-utasítások nem szabad formátumúak: a sor eleji #-jellel kezdődnek, és a sor végével
+                    végződnek. Folytatósor a sor végi \-sel írható.
+                    <br><br>
+                    <b>#include</b>
+                    Alakja:
+                    <br><br>
+                    <code>
+                        #include &lt;fájlnév&gt;
+                        <br>
+                        #include "fájlnév"
+                    </code>
+                    <br><br>
+                    A header-fájlok használata lehetővé teszi, hogy a deklarációkat egy helyen lehessen leírni. A
+                    forrásprogramoknak csak hivatkozniuk kell rá az #include utasítással.
+                    <br><br>
+                    <b>#define</b>
+                    Alakja:
+                    <br><br>
+                    <code>
+                        #define TOMBMERET 100
+                        <br>
+                        int tomb[TOMBMERET],i;
+                    </code>
+                    <br><br>
                 </p>
-                <a href="" target="_blank" rel="noreferrer"
-                    class="d-flex justify-content-end align-self-center flex-column">
-                    <img src="./media" alt=""
-                        title="" decoding="async" class="align-self-center rounded" width="100%"
-                        height="100%">
-                    <p></p>  
+                <a href="https://hu.wikipedia.org/wiki/C_(programoz%C3%A1si_nyelv)#Preprocesszor_utas%C3%ADt%C3%A1sok"
+                    target="_blank" rel="noreferrer" class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/programozas-alapjai/5-preprocesszor-utasitasok.webp"
+                        alt="Preprocesszor utasítások" title="Preprocesszor utasítások" decoding="async"
+                        class="align-self-center rounded" width="100%" height="100%">
+                    <p>Wikipédia: C (programozási nyelv) - Preprocesszor utasítások</p>
                 </a>
             </article>
 
-            <h2 id="operatorok-kifejezesek">Operátorok és kifejezések</h2>
-            <article class="d-flex flex-row justify-content-between">
+            <h2 id="felteletes-utasitasok">6. Feltételes utasítások</h2>
+            <article class="d-flex flex-row justify-content-around">
                 <p>
-                    
+                    <b>Az if utasítás</b>
+                    Alakja:
+                    <br><br>
+                    <code>
+                        if(feltétel)
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        utasítás;
+                        <br>
+                        else utasítás2;
+                    </code>
+                    <br><br>
+                    <b>A switch utasítás</b>
+                    Alakja:
+                    <br><br>
+                    <code>
+                        switch(kifejezés) {
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        case érték1: ...
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        break;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        case érték2: ...
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        break;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        default: ...
+                        <br>
+                        }
+                    </code>
                 </p>
-                <a href="" target="_blank" rel="noreferrer"
-                    class="d-flex justify-content-end align-self-center flex-column">
-                    <img src="./media" alt=""
-                        title="" decoding="async" class="align-self-center rounded" width="100%"
+                <a href="https://hu.wikipedia.org/wiki/C_(programoz%C3%A1si_nyelv)#Vez%C3%A9rl%C5%91_utas%C3%ADt%C3%A1sok"
+                    target="_blank" rel="noreferrer" class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/programozas-alapjai/6-felteletes-utasitasok.webp" alt="Feltételes utasítás"
+                        title="Feltételes utasítás" decoding="async" class="align-self-center rounded" width="100%"
                         height="100%">
-                    <p></p>  
+                    <p>Wikipédia: C (programozási nyelv) - Vezérlő utasítások</p>
                 </a>
             </article>
 
-            <h2 id="c-utasitasai">A C nyelv utasításai</h2>
-            <article class="d-flex flex-row justify-content-between">
+            <h2 id="ciklus-utasitasok">7. Ciklus utasítások</h2>
+            <article class="d-flex flex-row justify-content-around">
                 <p>
-                    
+                    <b>A while utasítás</b>
+                    Alakja:
+                    <br><br>
+                    <code>
+                        while(feltétel)
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        utasítás;
+                    </code>
+                    <br><br>
+                    <b>A for utasítás</b>
+                    Alakja:
+                    <br><br>
+                    <code>
+                        for(előkifejezés; feltétel; utókifejezés)
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        utasítás;
+                    </code>
+                    <br><br>
+                    <b>A do/while utasítás</b>
+                    Alakja:
+                    <br><br>
+                    <code>
+                        do utasítás;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        while  feltétel;
+                    </code>
+                    <br><br>
                 </p>
-                <a href="" target="_blank" rel="noreferrer"
-                    class="d-flex justify-content-end align-self-center flex-column">
-                    <img src="./media" alt=""
-                        title="" decoding="async" class="align-self-center rounded" width="100%"
+                <a href="https://hu.wikipedia.org/wiki/C_(programoz%C3%A1si_nyelv)#A_while_utas%C3%ADt%C3%A1s"
+                    target="_blank" rel="noreferrer" class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/programozas-alapjai/7-ciklus-utasitasok.webp" alt="Ciklus utasítás"
+                        title="Ciklus utasítás" decoding="async" class="align-self-center rounded" width="100%"
                         height="100%">
-                    <p></p>  
+                    <p>Wikipédia: C (programozási nyelv) - Vezérlő utasítások</p>
                 </a>
             </article>
 
-            <h2 id="felteletes-utasitasok">Feltételes utasítások</h2>
-            <article class="d-flex flex-row justify-content-between">
+            <h2 id="fuggvenyek">8. Függvények</h2>
+            <article class="d-flex flex-row justify-content-around">
                 <p>
-                    
+                    A függvények a hívó programtól kapott paraméterek alapján kiszámítanak egy értéket, és visszaadják a
+                    hívónak. A paraméterek és a visszatérési értékek helyes értelmezéséről a függvény deklarációja
+                    gondoskodik. A deklaráció nyomatékosan ajánlott, de nem kötelező.
+                    <br><br>
+                    A C-ben nincs eljárás, de a hívó program – az aritmetikai utasítások szabályai miatt – nem köteles
+                    felhasználni a függvény visszatérési értékét, ezért a függvények használhatók eljárásként. A
+                    gyakorlatban így is zavart okozott a függvények eljárásként történő használata, ezért az ANSI C-ben
+                    bevezették a void típust, mellyel semmilyen művelet nem végezhető. Ez azt jelenti, hogy a void
+                    típust visszaadó függvény gyakorlatilag eljárásnak tekinthető.
+                    <br><br>
+                    <b>Függvénydeklaráció</b>
+                    <br><br>
+                    Két módja van:
+                    <br>
+                    - típusdeklaráció: csak a függvény visszatérési értékének típusát mondja meg, a paraméterekét nem.
+                    <br>
+                    - prototípus: a visszatérési érték típusán felül megadja a paraméterek számát és típusát is.
                 </p>
-                <a href="" target="_blank" rel="noreferrer"
-                    class="d-flex justify-content-end align-self-center flex-column">
-                    <img src="./media" alt=""
-                        title="" decoding="async" class="align-self-center rounded" width="100%"
-                        height="100%">
-                    <p></p>  
+                <a href="https://hu.wikipedia.org/wiki/C_(programoz%C3%A1si_nyelv)#F%C3%BCggv%C3%A9nyek" target="_blank"
+                    rel="noreferrer" class="d-flex justify-content-end align-self-center flex-column">
+                    <img src="./media/programozas-alapjai/8-fuggvenyek.webp" alt="Függvény" title="Függvény"
+                        decoding="async" class="align-self-center rounded" width="100%" height="100%">
+                    <p>Wikipédia: C (programozási nyelv) - Függvények</p>
                 </a>
             </article>
 
-            <h2 id="ciklus-utasitasok">Ciklus utasítások</h2>
-            <article class="d-flex flex-row justify-content-between">
+            <h2 id="tombok-mutatok-sztringek">9. Tömbök, mutatók, sztringek</h2>
+            <article class="d-flex flex-row justify-content-around">
                 <p>
-                    
+                    <b>Tömbök</b>
+                    <br><br>
+                    A programozásban tömbnek olyan változókat neveznek, melyek több azonos típusú adatból állnak. A
+                    deklaráció formája azonos a skalár (nem tömb) típusú változóval. Az elemek számát C-ben a változónév
+                    után szögletes zárójelben kell megadni (csak egész típusú érték lehet), a kezdőértékeket pedig a
+                    struktúráknál megismert módon. Pl:
+                    <br><br>
+                    <code>
+                        int egesztomb[4];
+                        <br>
+                        const int allando[3] = { 1, 2, 3 };
+                    </code>
+                    <br><br>
+                    <b>Mutatók</b>
+                    <br><br>
+                    A mutató memóriacímet tároló változó. Leggyakrabban függvények paramétereiben és
+                    tömbelem-hivatkozásokban fordul elő.
+                    <br><br>
+                    A mutató típusa a memóriacímen tárolt adat típusát jelzi. A mutatót a változódeklarációban a név elé
+                    tett csillag jelzi:
+                    <br><br>
+                    <code>
+                        int *mut;
+                    </code>
+                    <br><br>
+                    Értéket a címképző operátorral adhatunk a mutatónak:
+                    <br><br>
+                    <code>
+                        int egesz = 3, *mut;
+                        <br>
+                        mut = &egesz;
+                    </code>
+                    <br><br>
+                    A mutatóval megadott adat értékére a * operátorral hivatkozunk. A fenti két sor után egesz és *mut
+                    értéke egyaránt 3.
                 </p>
-                <a href="" target="_blank" rel="noreferrer"
+                <a href="https://hu.wikipedia.org/wiki/C_(programoz%C3%A1si_nyelv)#T%C3%B6mb%C3%B6k" target="_blank" rel="noreferrer"
                     class="d-flex justify-content-end align-self-center flex-column">
-                    <img src="./media" alt=""
-                        title="" decoding="async" class="align-self-center rounded" width="100%"
+                    <img src="./media/programozas-alapjai/9-tombok-mutatok-sztringek.webp" alt="Mutató" title="Mutató" decoding="async" class="align-self-center rounded" width="100%"
                         height="100%">
-                    <p></p>  
-                </a>
-            </article>
-
-            <h2 id="fuggvenyek">Függvények</h2>
-            <article class="d-flex flex-row justify-content-between">
-                <p>
-                    
-                </p>
-                <a href="" target="_blank" rel="noreferrer"
-                    class="d-flex justify-content-end align-self-center flex-column">
-                    <img src="./media" alt=""
-                        title="" decoding="async" class="align-self-center rounded" width="100%"
-                        height="100%">
-                    <p></p>  
-                </a>
-            </article>
-
-            <h2 id="tombok-mutatok-sztringek">Tömbök, mutatók, sztringek</h2>
-            <article class="d-flex flex-row justify-content-between">
-                <p>
-                    
-                </p>
-                <a href="" target="_blank" rel="noreferrer"
-                    class="d-flex justify-content-end align-self-center flex-column">
-                    <img src="./media" alt=""
-                        title="" decoding="async" class="align-self-center rounded" width="100%"
-                        height="100%">
-                    <p></p>  
+                    <p></p>
                 </a>
             </article>
         </section>
@@ -231,7 +575,8 @@
 
     <footer class="pt-4">
         <div class="col-sm-12 text-center">
-            <a href="https://github.com/CLorant/K1IFABSzgepArchGyak/tree/main/SemTaskK1IFAB" target="_blank" rel="noreferrer">
+            <a href="https://github.com/CLorant/K1IFABSzgepArchGyak/tree/main/SemTaskK1IFAB" target="_blank"
+                rel="noreferrer">
                 <img src="./media/github.svg" alt="github" title="github">
             </a>
             <p>Készítette: Czibik Lóránt Patrik</p>

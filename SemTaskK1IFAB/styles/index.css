@@ -1,7 +1,8 @@
 :root {
     --primary-background-color: #023c5f;
     --secondary-background-color: #d8deec;
-    --navbar-footer-background-color: #dadde4;
+    --header-footer-background-color: #dadde4;
+    --table-background-color: #f2f2f2;
     --primary-text-color: #222d36;
     --secondary-text-color: #36454f;
     --light-text-color: #dcdcdc;
@@ -20,7 +21,7 @@ footer img {
 
 .navbar,
 footer {
-    background-color: var(--navbar-footer-background-color);
+    background-color: var(--header-footer-background-color);
 }
 
 .navbar-toggler {
@@ -127,6 +128,27 @@ section {
 section a {
     width: 50%;
     height: 100%;
+}
+
+table {
+    width: 95%;
+    margin-left: 28px;
+    margin-right: 28px;
+    margin-bottom: 3rem;
+}
+
+th {
+    background-color: var(--header-footer-background-color);
+    font-variation-settings: "wght" 700;
+    text-align: center;
+}
+
+tr {
+    background-color: var(--table-background-color);
+}
+
+table, td, th {
+    border: 1px solid black;
 }
 
 ol {
@@ -328,5 +350,19 @@ a:hover {
 
     main ul li {
         font-size: 16px;
+    }
+    
+    article p {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    tr th:nth-child(1), tr td:nth-child(1) {
+        display: none;
+    }
+
+    table {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
